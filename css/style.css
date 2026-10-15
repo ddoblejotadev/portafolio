@@ -1,0 +1,281 @@
+/* ---------- Portafolio Juan Llontop Román ---------- */
+
+/* Reset base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e5e7eb;
+}
+
+.header-text .name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.header-text .role {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.header-text .location {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.header-nav {
+  margin-top: 0.75rem;
+}
+
+.header-nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Secciones ---------- */
+main {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.section-intro {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+}
+
+/* ---------- Sobre mí ---------- */
+#sobre-mi p {
+  margin-bottom: 1rem;
+  color: #374151;
+  max-width: 700px;
+}
+
+/* ---------- Proyectos ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.project-media {
+  height: 160px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.75rem;
+}
+
+.project-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.project-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.project-tech {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-tech span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  background: #f3f4f6;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+/* ---------- Tecnologías ---------- */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-item {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  border: 1px solid #bfdbfe;
+}
+
+/* ---------- Contacto ---------- */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 480px;
+}
+
+.contact-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.625rem;
+  padding: 0.875rem 1.25rem;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.contact-link span:first-child {
+  font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 2rem 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .header-inner {
+    gap: 0.75rem;
+  }
+
+  .header-text .name {
+    font-size: 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
